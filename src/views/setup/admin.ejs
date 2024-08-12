@@ -1,0 +1,56 @@
+<div class="container mt-3">
+    <h1 class="mb-3 text-uppercase">Configurando um usuário administrador:</h1>
+    <form action="/setup/admin" method="post">
+
+        <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input
+                type="email"
+                class="form-control"
+                name="inputEmail"
+                id="inputEmail"
+                aria-describedby="helpId"
+                placeholder="user@email.com"
+                required
+            />
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        
+        <div class="mb-3">
+            <label for="inputUsername" class="form-label">Username</label>
+            <input
+                type="text"
+                class="form-control"
+                name="inputUsername"
+                id="inputUsername"
+                aria-describedby="helpId"
+                placeholder=""
+                required
+            />
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+      
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input
+                type="password"
+                class="form-control"
+                name="inputPassword"
+                id="inputPassword"
+                aria-describedby="helpId"
+                placeholder=""
+                required
+            />
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        
+        <button
+            type="submit"
+            class="btn btn-primary"
+        >
+            Salvar
+        </button>
+        
+
+    </form>
+</div>

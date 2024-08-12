@@ -1,0 +1,15 @@
+{
+  "verbose": false,
+  "delay": "15000",
+  "watch": [".env", "package.json", "src"],
+  "ignore": ["node_modules", "src/public", "src/views"],
+  "ext": "js,mjs,cjs,json,env",
+  "execMap": {
+    "js": "node"
+  },
+  "restartable": "rs",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "legacyWatch": false
+}

@@ -1,0 +1,113 @@
+<div class="container mt-3">
+    <h1 class="mb-3 text-uppercase">Configurando as Variaveis de Ambiente:</h1>
+    <form action="/setup/database" method="post">
+        <div class="mb-3">
+            <label for="inputPort" class="form-label">Server Port:</label>
+            <input
+                type="text"
+                class="form-control"
+                name="inputPort"
+                id="inputPort"
+                aria-describedby="helpId"
+                placeholder="3000"
+                required
+            />
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+
+        <div class="mb-3">
+            <label for="inputDB_Name" class="form-label">Database Name:</label>
+            <input
+                type="text"
+                class="form-control"
+                name="inputDB_Name"
+                id="inputDB_Name"
+                aria-describedby="helpId"
+                placeholder=""
+                required
+            />
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        
+        <div class="mb-3">
+            <label for="inputDB_User" class="form-label">Database Usename:</label>
+            <input
+                type="text"
+                class="form-control"
+                name="inputDB_User"
+                id="inputDB_User"
+                aria-describedby="helpId"
+                placeholder=""
+                required
+            />
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        
+        <div class="mb-3">
+            <label for="inputDB_Password" class="form-label">Database Password:</label>
+            <input
+                type="password"
+                class="form-control"
+                name="inputDB_Password"
+                id="inputDB_Password"
+                aria-describedby="helpId"
+                placeholder=""
+                required
+            />
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        
+        <div class="mb-3">
+            <label for="inputDB_Host" class="form-label">Database Host IP:</label>
+            <input
+                type="text"
+                class="form-control"
+                name="inputDB_Host"
+                id="inputDB_Host"
+                aria-describedby="helpId"
+                placeholder="127.0.0.1"
+                required
+            />
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        
+        <!-- <div class="mb-3">
+            <label for="inputDB_Dialect" class="form-label">Database Dialect:</label>
+            <input
+                type="text"
+                class="form-control"
+                name="inputDB_Dialect"
+                id="inputDB_Dialect"
+                aria-describedby="helpId"
+                placeholder="mariadb"
+                required
+            />
+            <small id="helpId" class="form-text text-muted">Help text</small>
+        </div> -->
+
+		<div class="mb-3">
+			<label for="inputDB_Dialect" class="form-label">Database Dialect:</label>
+			<select
+				class="form-select form-select-lg"
+				name="inputDB_Dialect"
+				id="inputDB_Dialect"
+			>
+				<option selected>Select one</option>
+				<option value="mariadb">MariaDB</option>
+				<option value="mysql">mySQL</option>
+				<option value="postgres" disabled>Postgres</option>
+				<option value="sqlite" disabled>sqlite</option>
+			</select>
+		</div>
+		
+        
+
+        <button
+            type="submit"
+            class="btn btn-primary"
+        >
+            Salvar
+        </button>
+        
+    </form>
+</div>
